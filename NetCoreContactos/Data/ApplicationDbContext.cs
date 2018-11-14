@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using NetCoreContactos.Models;
 
 namespace NetCoreContactos.Data
 {
@@ -12,5 +13,6 @@ namespace NetCoreContactos.Data
             : base(options)
         {
         }
+        public DbSet<NetCoreContactos.Models.Contact> Contacts { get; set; }
     }
 }
